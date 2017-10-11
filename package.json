@@ -1,7 +1,7 @@
 {
   "name": "ecds-ember-accordion",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Pure CSS, no dependency animated accordion that fakes max-height 0 - auto.",
   "keywords": [
     "ember-addon"
   ],
