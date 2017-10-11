@@ -1,0 +1,21 @@
+.ecds-accordion {
+    padding: .5em 0;
+}
+
+.ecds-accordion-header {
+    cursor: pointer;
+}
+
+.ecds-accordion-body {
+    font-size: 1em;
+    margin-left: 1em;
+    max-height: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transition: max-height .3s cubic-bezier(0, 1.05, 0, 1);
+}
+
+.ecds-accordion-body.expanded {
+    max-height: 100vh;
+    transition: max-height .4s;
+}

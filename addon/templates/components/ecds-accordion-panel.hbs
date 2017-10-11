@@ -1,0 +1,8 @@
+{{#each items as |listItem|}}
+  {{#ecds-accordion-item item=listItem activeItem=activeItem as |isExpanded| }}
+  {{yield listItem
+          (hash isExpanded=isExpanded
+                header=(component 'ecds-accordion-header' click=(action 'toggleActiveItem' listItem))
+                body=(component 'ecds-accordion-body' isExpanded=isExpanded))}}
+  {{/ecds-accordion-item}}
+{{/each}}
