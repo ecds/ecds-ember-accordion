@@ -5,5 +5,9 @@ const { Component } = Ember;
 
 export default Component.extend({
   layout,
-  classNames: ['ecds-accordion-header']
+  classNames: ['ecds-accordion-header'],
+  classNameBindings: ['isExpanded:active'],
+  isExpanded() {
+    return this.get('isExpanded')
+},
 });

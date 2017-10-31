@@ -1,20 +1,4 @@
-body {
-    margin: auto 0;
-}
-.ecds-accordion-container {
-    width: 50vw;
-}
-.ecds-accordion {
-    padding: .5em 0;
-}
-
-.ecds-accordion-header {
-    cursor: pointer;
-}
-
 .ecds-accordion-body {
-    font-size: 1em;
-    margin-left: 1em;
     max-height: 0;
     overflow: hidden;
     transform-origin: top;

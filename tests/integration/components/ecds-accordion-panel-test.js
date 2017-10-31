@@ -50,7 +50,5 @@ test('it renders', function(assert) {
 {{/ecds-accordion-panel}}
   `);
 
-  console.log(this.$().text());
-
   assert.equal(this.$().text(), 'template block');
 });
