@@ -12,10 +12,10 @@ export default Component.extend({
       toggleActiveItem(item) {
           if (this.get('activeItem') !== item) {
               this.set('activeItem', item);
-              item.setProperties({active: false});
+              item.setProperties({accordion_active: true});
             } else {
               this.set('activeItem', null);
-              item.setProperties({active: true});
+              item.setProperties({accordion_active: false});
           }
       }
   }
