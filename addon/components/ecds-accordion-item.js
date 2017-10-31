@@ -10,6 +10,7 @@ export default Component.extend({
   item: null,
   activeItem: null,
 
+  // Handel this with the attribute instead?
   isExpanded: computed('activeItem', 'item', function() {
       return this.get('activeItem') === this.get('item');
   })
