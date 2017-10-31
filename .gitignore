@@ -6,6 +6,8 @@
 
 # dependencies
 /node_modules
+/.node_modules.ember-try
+package.json.ember-try
 /bower_components
 
 # misc

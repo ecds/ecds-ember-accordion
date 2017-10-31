@@ -1,3 +1,9 @@
+body {
+    margin: auto 0;
+}
+.ecds-accordion-container {
+    width: 50vw;
+}
 .ecds-accordion {
     padding: .5em 0;
 }

@@ -5,6 +5,7 @@ const { Component } = Ember;
 
 export default Component.extend({
   layout,
+  classNames: ['ecds-accordion-container'],
   items: null,
   activeItem: null,
   actions: {

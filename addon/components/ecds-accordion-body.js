@@ -14,7 +14,5 @@ export default Component.extend({
     transitionend: 'transitionend'
   },
 
-  transitionend() {
-    console.log('end');
-  }
+  transitionend() {}
 });
