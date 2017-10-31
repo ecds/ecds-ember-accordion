@@ -12,8 +12,10 @@ export default Component.extend({
       toggleActiveItem(item) {
           if (this.get('activeItem') !== item) {
               this.set('activeItem', item);
-          } else {
+              item.setProperties({active: false});
+            } else {
               this.set('activeItem', null);
+              item.setProperties({active: true});
           }
       }
   }
