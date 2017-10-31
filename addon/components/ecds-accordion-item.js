@@ -6,6 +6,7 @@ const { Component, computed } = Ember;
 export default Component.extend({
   layout,
   classNames: ['ecds-accordion'],
+  classNameBindings: ['isExpanded:active'],
   item: null,
   activeItem: null,
 
