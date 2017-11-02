@@ -1,9 +1,12 @@
 <h1>Planets</h1>
 {{#ecds-accordion-panel items=planets as |planet panel|}}
   {{#panel.header}}
-    {{planet.name}}
+    <h2>{{planet.name}}</h2>
   {{/panel.header}}
   {{#panel.body}}
    {{planet.description}}
   {{/panel.body}}
+  {{#panel.footer}}
+    <h3>This is footer</h3>
+  {{/panel.footer}}
 {{/ecds-accordion-panel}}

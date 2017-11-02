@@ -3,6 +3,7 @@
   {{yield listItem
           (hash isExpanded=isExpanded
                 header=(component 'ecds-accordion-header' isExpanded=isExpanded click=(action 'toggleActiveItem' listItem))
-                body=(component 'ecds-accordion-body' isExpanded=isExpanded))}}
+                body=(component 'ecds-accordion-body' isExpanded=isExpanded)
+                footer=(component 'ecds-accordion-footer' isExpanded=isExpanded))}}
   {{/ecds-accordion-item}}
 {{/each}}

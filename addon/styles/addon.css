@@ -1,11 +1,31 @@
-.ecds-accordion-body {
+.ecds-accordion-body,
+.ecds-accordion-footer {
     max-height: 0;
     overflow: hidden;
     transform-origin: top;
+}
+
+.ecds-accordion-body,
+.ecds-accordion-footer {
     transition: max-height .3s cubic-bezier(0, 1.05, 0, 1);
 }
 
-.ecds-accordion-body.expanded {
+.ecds-accordion-footer {
+    transform-origin: bottom;
+}
+
+.ecds-accordion-body.expanded,
+.ecds-accordion-footer.expanded {
     max-height: 100vh;
+}
+
+.ecds-accordion-body.expanded,
+.ecds-accordion-footer.expanded {
     transition: max-height .4s;
+}
+
+.ecds-accordion-footer.expanded {
+    transition-property: max-height;
+    transition-delay: .1s;
+    transform-origin: top;
 }
